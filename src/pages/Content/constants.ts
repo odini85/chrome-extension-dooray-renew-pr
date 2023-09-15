@@ -5,7 +5,7 @@ export const INFO_SELECTOR = '*[data-subject]';
 export const ROOT_ELEMENT_ID = 'uid_chrome_extension_pr_root';
 
 /** UI요소를 삽입하기위한 부모 엘리먼트의 selector */
-export const PARENT_SELECTOR = '*[role="navigation"';
+export const PARENT_SELECTOR = '*[role="navigation"]';
 
 /** 메시지 템플릿 - 커밋 */
 export const MESSAGE_TEMPLATE_COMMIT = 'feat: [{{taskNumber}}] {{subject}}';
