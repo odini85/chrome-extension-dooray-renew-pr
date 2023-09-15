@@ -13,3 +13,6 @@ export const MESSAGE_TEMPLATE_COMMIT = 'feat: [{{taskNumber}}] {{subject}}';
 /** 메시지 템플릿 - PR */
 export const MESSAGE_TEMPLATE_PR =
   '#{{projectCode}}/{{taskNumber}}: {{subject}}';
+
+/** tick interval */
+export const DEFAULT_TICK_INTERVAL = 1000;

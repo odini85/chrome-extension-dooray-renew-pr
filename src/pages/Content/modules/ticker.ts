@@ -1,3 +1,5 @@
+import { DEFAULT_TICK_INTERVAL } from '../constants';
+
 /**
  * ticker를 생성하기 위한 타입
  */
@@ -31,7 +33,7 @@ export const createTicker = (param: Partial<CreateTickerOption>): Ticker => {
   /** 기본 옵션 */
   const defaultOption: CreateTickerOption = {
     immediate: true,
-    interval: 1000,
+    interval: DEFAULT_TICK_INTERVAL,
     runCallback: () => {},
     cancelCallback: () => {},
   };
