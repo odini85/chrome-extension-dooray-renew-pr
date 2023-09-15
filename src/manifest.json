@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Dooray PR Extension",
+  "description": "PR 작성을 위한 메시지 작성 클리보드 복사 버튼을 Dooray에 주입합니다.",
+  "background": { "service_worker": "background.bundle.js" },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://nhnent.dooray.com/task/*"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.styles.css", "icon-128.png"],
+      "matches": []
+    }
+  ]
+}

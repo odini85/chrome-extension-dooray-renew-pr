@@ -1,0 +1,10 @@
+.chrome-extension-dooray-pr-container .btn-cedpc {
+  margin: 0 5px;
+  padding: 0 5px;
+  background: #fff;
+  border: 1px solid #000;
+}
+.chrome-extension-dooray-pr-container .btn-cedpc:hover {
+  background: #000;
+  color: #fff;
+}
