@@ -20,7 +20,11 @@ export const App = () => {
    * 타겟 요소의 dataset
    */
   const [dataset, setDataset] = useState({
-    ...document.querySelector<HTMLDivElement>(INFO_SELECTOR)!.dataset,
+    ...(document.querySelector<HTMLDivElement>(INFO_SELECTOR)?.dataset ?? {
+      taskNumber: '',
+      subject: '',
+      projectCode: '',
+    }),
   });
 
   /**
@@ -146,9 +150,9 @@ export const App = () => {
       >
         {dataset.taskNumber}
       </button>
-      <button className="btn-cedpc" type="button" onClick={handleCopyCommit}>
+      {/* <button className="btn-cedpc" type="button" onClick={handleCopyCommit}>
         커밋 메시지
-      </button>
+      </button> */}
       <button className="btn-cedpc" type="button" onClick={handleCopyPr}>
         PR 메시지
       </button>

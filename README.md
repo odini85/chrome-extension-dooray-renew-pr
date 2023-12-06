@@ -79,6 +79,7 @@ SPA의 경우를 고려하여 mutation observer를 활용하여 돔 요소의 �
     ├── Background              // backgroundScript
     │   └── index.js
     └── Content                 // contentScript
+        ├── constants.ts        // 상수 - selector, 메시지 템플릿, tick interval 등.
         ├── content.styles.css
         ├── index.ts            // contentScript를 제어하는 루트 모듈
         ├── modules
@@ -86,5 +87,5 @@ SPA의 경우를 고려하여 mutation observer를 활용하여 돔 요소의 �
         │   └── ticker.ts       // 지속적인 감지를 위한 ticker
         └── ui                  // 주입되는 화면 제어 코드(with React)
             ├── App.tsx         // 루트 컴포넌트
-            └── main.tsx        // 루트 포인트
+            └── main.tsx        // 루트 모듈
 ```
